@@ -1,0 +1,128 @@
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", "Gill Sans", "Gill Sans MT", Calibri,
+    sans-sarif;
+  height: 100vh;
+  background-image: linear-gradient(#e66465, #9198e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body > .container-1 > .main-img {
+  background-image: url(./img/mountains.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+body > .container-1 h1 {
+  color: black;
+  font-size: 48px;
+}
+
+.container-1 {
+  height: 400px;
+  width: 300px;
+}
+.container-1 a {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 2px dotted black;
+}
+
+.main-img {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-2 {
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+}
+
+.container-2 > form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 80%;
+}
+
+.container-2 > form label {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgb(174, 170, 170);
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-2 > form input {
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid rgb(174, 170, 170);
+  width: 100%;
+  padding: 8px;
+}
+
+.section-2-btn {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.section-2-btn > .get-started {
+  background-color: #9198e5;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.section-2-btn > .get-started:hover {
+  transform: scale(1.1);
+}
+
+.section-2-btn .sign-in {
+  text-decoration: none;
+  color: #9198e5;
+  font-size: 18px;
+}
+
+.section-2-btn p {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 8px;
+}
+
+ion-icon {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  padding: 8px;
+  height: 28px;
+  width: 28px;
+  color: rgb(174, 170, 170);
+  cursor: pointer;
+}
